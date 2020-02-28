@@ -1,0 +1,401 @@
+@font-face {
+    font-family: "Buenard-Bold";
+    src: url("../fonts/Buenard-Bold.ttf");
+}
+@font-face {
+    font-family: "Buenard-Regular";
+    src: url("../fonts/Buenard-Regular.ttf");
+}
+
+* { margin:0; padding: 0 }
+
+figure {
+  margin: 0;
+}
+body {
+  font-family:'Buenard-Regular', sans-serif;
+  background-color: #FF9700;
+  line-height: 1.7;
+  color: #3A3A3A;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+html {
+    font-size: 10px;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+figure, h1, h2, h3, p {
+    margin: 0;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+ul, li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* Login */
+.model-login {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.model-login .row {
+    justify-content: center;
+}
+.model-box-container {
+    background-color: #FFB700;
+    padding: 5rem 3rem;
+    border-radius: 1rem;
+}
+.model-box-container .model-box {
+    text-align: center;
+}
+.model-box-container .model-box h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #3A3A3A;
+    margin-bottom: 3rem;
+}
+.model-box-container .model-box input {
+    border: none;
+    border-radius: 0.4rem;
+    width: 100%;
+    min-height: 4rem;
+    padding-left: 5rem;
+    margin-bottom: 1.3rem;
+    font-weight: bold;
+    color: #3A3A3A;
+    font-size: 1.6rem
+}
+.model-box-container .model-box input::placeholder {
+    font-weight: bold;
+    color: #3A3A3A
+}
+.model-box-container .model-box .btn-login {
+    background-color: #666666;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem 6rem;
+    border-radius:  0.4rem;
+    margin-top: 3rem;
+}
+/* End Login */
+/* Logout */
+.dashboard-logout,
+.dashboard-logout .container,
+.dashboard-logout .row,
+.dashboard-logout .card-infomation-user,
+.dashboard-logout .container-card {
+    /* height: 100%; */
+}
+.dashboard-logout .card-content,
+.dashboard-logout .card-infomation-user {
+    padding: 2rem 1rem;
+}
+.dashboard-logout .card-infomation-user {
+    text-align: right;
+}
+.btn-close {
+    width: 3rem;
+    cursor: pointer;
+
+}
+.dashboard-logout .card-content {
+    text-align:  center;
+}
+.dashboard-logout .container-card {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    border: 1px solid #000000;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 1;
+    width: 80%;
+    height: 100%;
+    transition: 0.4s;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+}
+.dashboard-logout .container-card.active {
+    left: 0;
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+.dashboard-logout .container-card  figure {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.dashboard-logout .container-card figure img {
+    border-radius: 50%;
+    width: 50%;
+}
+.dashboard-logout .container-card .list-menu {
+    padding: 0 2rem;
+}
+.dashboard-logout .container-card .list-menu li {
+    margin-bottom: 2rem;
+    padding: 0.2rem 2rem;
+    border-radius: 1rem;
+}
+.dashboard-logout .container-card .list-menu li a {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3A3A3A;
+    display: inline-block;
+}
+.dashboard-logout .container-card .list-menu li.active {
+    background: #FCC070;
+}
+
+.dashboard-logout .card-content h2 {
+    font-size: 2.4rem;
+    color: #3A3A3A;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+.dashboard-logout .card-content p {
+    font-size: 2rem;
+    color: #3A3A3A;
+    margin-bottom: 5rem;
+    font-weight: bold;
+}
+.dashboard-logout .card-content .popup {
+    background: #ffffff;
+    display: inline-block;
+    padding: 3rem 2rem;
+    border: 1px solid #FF9700;;
+}
+.dashboard-logout .card-content .popup button.btn-confirm {
+    border: none;
+    background-color: #FF9700;
+    color: #fff;
+    border-radius: 1rem;
+    padding: 0.2rem 2rem;
+    text-transform: uppercase;
+}
+.dashboard-logout .card-content .popup .group-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.dashboard-logout .card-content .popup {
+    box-shadow: 15px 20px 20px #545454;
+}
+.dashboard-logout .card-content .container-content {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    border-radius: 0.5rem;
+    border: 1px solid #000000;
+    padding: 6rem 0;
+}
+/* End Logout */
+/* Timer */
+.dashboard-logout .card-content .container-timer {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fff;
+    border-radius: 0.5rem;
+    border: 1px solid #000000;
+    padding: 6rem 0;
+}
+.dashboard-logout .card-content .container-timer h2 {
+    display: block;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+.dashboard-logout .card-content .container-timer .date {
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+.dashboard-logout .card-content .container-timer .timer {
+    display: block;
+    font-size: 4rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.dashboard-logout .card-content .container-timer .btn-end,
+.dashboard-logout .card-content .container-timer .btn-start {
+    font-size: 2.4rem;
+    border: none;
+    background: #ff9700;
+    color: #ffffff;
+    padding: 0rem 8rem;
+    border-radius: 1.2rem;
+    line-height: 4.5rem;
+    min-height: 4.5rem;
+}
+/* End Timer */
+/* Detail */
+.dashboard-logout .card-content .container-detail {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fff;
+    border-radius: 0.5rem;
+    border: 1px solid #000000;
+    padding: 6rem 0;
+}
+.dashboard-logout .card-content .container-detail .total-time {
+    width: 100%;
+}
+.dashboard-logout .card-content .container-detail .total-time p {
+    font-size: 4rem;
+}
+.dashboard-logout .card-content .container-detail .total-time p,
+.dashboard-logout .card-content .container-detail .total-time h2 {
+    margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.dashboard-logout .card-content .container-detail table {
+    width: 84%;
+}
+.dashboard-logout .card-content .container-detail table tr > td {
+    border: 1px solid rgb(185, 180, 180);
+    color: #3A3A3A;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.dashboard-logout .card-content .container-detail table tr td:first-child {
+    width: 7%;
+}
+.pagination .numbers span {
+    color: #3A3A3A;
+    font-size: 2rem;
+    
+}
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 6rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+.pagination .btn-next,
+.pagination .btn-prev {
+    border: none;
+    background: none;
+}
+.date span.btn-date {
+    width: 3.5rem;
+    height: 3.5rem;
+    background: #585959;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    vertical-align: top;
+    margin-right: 2rem;
+}
+.date span.btn-date.active {
+    background: #FFB703;
+}
+.date input {
+    border: 1px solid #353535;
+    border-radius: 0;
+    text-align: center;
+    font-size: 2rem;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    max-width: 17rem;
+    max-height: 4rem;
+}
+.date {
+    margin-bottom: 2rem;
+}
+.date .left {
+    margin-bottom: 2rem;
+}
+/* End Detail */
+@media screen and (min-width: 768px) {
+    /* Login */
+    .model-box-container {
+        padding: 6rem 6rem;
+        min-width: 42rem;
+    }
+    .dashboard-logout .card-content .popup {
+        min-width: 50rem;
+    }
+    /* End Login */
+    /* Logout */
+    .dashboard-logout, 
+    .dashboard-logout .container, 
+    .dashboard-logout .row, 
+    .dashboard-logout .card-infomation-user, 
+    .dashboard-logout .container-card {
+        height: unset;
+    }
+    /* End Logout */
+    .dashboard-logout .container-card { 
+        width: 50%;
+    }
+    
+    .date {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 10rem;
+    }
+    .date .left {
+        margin-bottom: 0;
+    }
+ }
+@media screen and (min-width: 992px) {
+    .dashboard-logout, 
+    .dashboard-logout .container, 
+    .dashboard-logout .row, 
+    .dashboard-logout .card-infomation-user, 
+    .dashboard-logout .container-card {
+        height: 100%;
+    }
+    .btn-close { 
+        display: none;
+    }
+    .dashboard-logout .container-card {
+        position: unset;
+        width: 100%;
+        opacity: 1; 
+        visibility: visible;
+    }
+ }
+@media screen and (min-width: 1200px) {
+    /* Logout */
+    .dashboard-logout .container {
+        /* min-width: 1400px; */
+    }
+    /* End Logout */
+ }
